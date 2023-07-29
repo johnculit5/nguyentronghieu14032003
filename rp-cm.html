@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Nguyễn Trọng Hiếu</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="space.css">
+    <link rel="stylesheet" href="rp-cm.css">
+    <script defer src="search.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="chatgpt.js"></script>
+</head>
+
+<body>
+
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><i class="fa-solid fa-message"></i></span>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class="fa-brands fa-android"></i></span>
+                <p>Hi there <br> How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message ..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined"><i
+                    class="fa-solid fa-circle-chevron-right"></i></span>
+        </div>
+    </div>
+
+
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div id="logo"><a href="index.html" class="logo"><img src="img/white-logo.png"></a></div>
+                        </li>
+                        <li><a href="index.html">
+                                <p class="text-white">Trang chủ</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-1">
+                                <p class="text-white">Học tập</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-2">
+                                <p class="text-white">Đam mê</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-3">
+                                <p class="text-white">Sở thích</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-4">
+                                <p class="text-white">Bản thân</p>
+                            </a></li>
+                        <li><a href="rp-cm.html">
+                                <p class="text-white">Bình luận</p>
+                            </a></li>
+                        <li><a href="background.html">
+                                <p class="text-white">Bộ sưu tập ảnh</p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="text-white">Liên hệ <i class="fa-solid fa-caret-down"></i></p>
+                            </a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/johnculit5/">Facebook</a>
+                                    </li>
+                                    <li><a href="https://zalo.me/0388136268">Zalo</a></li>
+                                    <li><a href="(+84)388136268">Telephone</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100095154425517">
+                                <p class="text-white">Fanpage</p>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="gif-container">
+                    <a href="#footer"> <img src="img/scroll.gif" alt="" class="gif-img"></a>
+                </div>
+                <div class="scroll-to-top">
+                    <a href="#" class="back-to-top"><img src="img/arrow-up (2).gif" alt=""></a>
+                </div>
+
+            </nav>
+            <div class="container-search">
+                <div class="icon">
+                    <i class="search fa fa-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Tìm kiếm" id="search">
+                    <i class="clear fa fa-times"></i>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <div class="sub-menu">
+                <a href="sign-in-up.html">
+                    <p class="text-white">Đăng nhập</p>
+                </a>
+                <a href="sign-in-up.html">
+                    <p id="sign-up" class="text-white">Đăng ký</p>
+                </a>
+            </div>
+            <div class="sub-header">
+                <a href="rp-cm.html"><img src="img/question (2).png" title="Trợ giúp"></a>
+            </div>
+        </div>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="76o65S7l"></script>
+
+        <div class="cout">
+            <div class="autm">
+                <div class="top-content">
+                    <header class="text-dark">Để lại bình luận</header>
+                    <span>Email của bạn sẽ không bị công khai*</span>
+                </div>
+                <div class="middle-content">
+                    <div class="content1">
+                        <br>
+                        <span><label for="comment" class="text-dark text-align-left">Bình luận</label></span>
+                        <label for="comment">
+                            <textarea name="comment" id="comment" cols="30" rows="20"
+                                placeholder="Viết bình luận vào đây."></textarea>
+                        </label>
+                    </div>
+                    <div class="contetnt2">
+                        <span><label for="name" class="text-dark">Tên*</label></span>
+                        <label for="name">
+                            <textarea name="name" id="name" cols="30" rows="1"></textarea>
+                        </label>
+                    </div>
+                    <div class="contetnt3">
+                        <span><label for="email" class="text-dark">Email*</label></span>
+                        <label for="email">
+                            <textarea name="email" id="email" cols="30" rows="1"></textarea>
+                        </label>
+                    </div>
+                    <div class="content4">
+                        <span><label for="country" class="country">Đang sống tại*</label></span>
+                        <label for="country">
+                            <select id="country" name="country">
+                                <option value="vietnam">Việt Nam</option>
+                                <option value="japan">Nhật Bản</option>
+                                <option value="canada">Trung Quốc</option>
+                                <option value="usa">Mỹ</option>
+                                <option value="russia">Nga</option>
+                                <option value="korea">Hàn Quốc</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+                <div class="problem">
+                    <input type="radio" name="problem" id="problem1"><span class="text-dark">Hỗ trợ</span>
+                    <input type="radio" name="problem" id="problem2"><span class="text-dark">Bình luận</span>
+                </div>
+                <div class="bottom-content">
+                    <button><span><a href="">Post Comment</a></span></button>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=100095154425517"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/johnculit5/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:nguyentronghieu14032003@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="(+84)388136268"><i class="fa-solid fa-phone"></i></a>
+                <a
+                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu"><i
+                        class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095154425517">Fanpage</a></li>
+                    <li><a href="https://www.facebook.com/johnculit5/">Facebook</a></li>
+                    <li><a href="mailto:nguyentronghieu14032003@gmail.com"> Email</a></li>
+                    <li><a href="(+84)388136268">Điện thoại</a></li>
+                    <li><a
+                            href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu">Bản
+                            đồ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright &copy;2023 Designed by <span class="designer">HIEU</span></p>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-tabs=""
+                data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/profile.php?id=100095154425517"
+                    class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/profile.php?id=100095154425517">Lobby Stu</a></blockquote>
+            </div>
+            <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-width=""
+                data-layout="" data-action="" data-size="" data-share="true"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

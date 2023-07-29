@@ -1,0 +1,69 @@
+.cout {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+/* Header styles */
+.top-content header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.top-content span {
+    color: #444;
+}
+
+/* Comment and Name fields */
+.middle-content {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Radio buttons */
+.problem {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.problem input[type="radio"] {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Post button */
+.bottom-content button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.bottom-content button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.bottom-content button a:hover{
+    color: #444;
+}

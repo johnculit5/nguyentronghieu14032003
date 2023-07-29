@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Nguyễn Trọng Hiếu</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="space.css">
+    <script defer src="search.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="chatgpt.js"></script>
+</head>
+
+<body>
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><i class="fa-solid fa-message"></i></span>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class="fa-solid fa-user-graduate"></i></span>
+                <p>Xin chào <br> Tôi có thể giúp gì cho bạn?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message ..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined"><i
+                    class="fa-solid fa-circle-chevron-right"></i></span>
+        </div>
+    </div>
+
+
+
+
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div id="logo"><a href="index.html" class="logo"><img src="img/white-logo.png"></a></div>
+                        </li>
+                        <li><a href="index.html">
+                                <p class="text-white">Trang chủ</p>
+                            </a></li>
+                        <li><a href="#section-1">
+                                <p class="text-white">Học tập</p>
+                            </a></li>
+                        <li><a href="#section-2">
+                                <p class="text-white">Đam mê</p>
+                            </a></li>
+                        <li><a href="#section-3">
+                                <p class="text-white">Sở thích</p>
+                            </a></li>
+                        <li><a href="#section-4">
+                                <p class="text-white">Bản thân</p>
+                            </a></li>
+                        <li><a href="rp-cm.html">
+                                <p class="text-white">Bình luận</p>
+                            </a></li>
+                        <li><a href="background.html">
+                                <p class="text-white">Bộ sưu tập ảnh</p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="text-white">Liên hệ <i class="fa-solid fa-caret-down"></i></p>
+                            </a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/johnculit5/">Facebook</a>
+                                    </li>
+                                    <li><a href="https://zalo.me/0388136268">Zalo</a></li>
+                                    <li><a href="(+84)388136268">Telephone</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100095154425517">
+                                <p class="text-white">Fanpage</p>
+                            </a></li>
+                    </ul>
+                </div>
+
+
+            </nav>
+            <div class="container-search">
+                <div class="icon">
+                    <i class="search fas fa-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Tìm kiếm" id="search">
+                    <i class="clear fas fa-times"></i>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <div class="sub-menu">
+                <a href="sign-in-up.html">
+                    <p class="text-white">Đăng nhập</p>
+                </a>
+                <a href="sign-in-up.html">
+                    <p id="sign-up" class="text-white">Đăng ký</p>
+                </a>
+            </div>
+            <div class="sub-header">
+                <a href="rp-cm.html"><img src="img/question (2).png" title="Trợ giúp"></a>
+            </div>
+        </div>
+
+
+
+        <div id="content">
+            <div class="greet">
+                <h1>Chào mừng đến với trang web của <span>Nguyễn Trọng Hiếu</span></h1>
+            </div>
+            <div class="greet-eng">
+                <a href="sign-in-up.html" title="Đăng ký ngay">
+                    <h2>Đăng ký làm thành viên của trang web.</h2>
+                </a>
+            </div>
+            <div class="short-content">
+                <p>Xin chào, trang web cá nhân của tôi là một không gian trực tuyến nơi tôi chia sẻ về sở thích và <br>
+                    kinh
+                    nghiệm trong cuộc sống của mình. Trang web này được tạo ra để chia sẻ những thông tin <br> cần thiết
+                    của tôi.
+                    Tôi hy vọng trang web của mình sẽ mang lại cho bạn những thông tin, <br> trải nghiệm và cảm hứng
+                    mới. Cảm ơn vì đã ghé thăm!</p>
+            </div>
+            <div class="space">
+                <div class="cloudsA">
+                    <div class="cloud1">
+                    </div>
+                    <div class="cloud2">
+                    </div>
+                    <div class="cloud3">
+                    </div>
+                </div>
+                <div class="cloudsB">
+                    <div class="cloud1">
+                    </div>
+                    <div class="cloud2">
+                    </div>
+                    <div class="cloud3">
+                    </div>
+                </div>
+                <div class="ovni">
+                    <div class="glass">
+                        <div class="reflex">
+                        </div>
+                    </div>
+                    <div class="ovniBody">
+                        <div class="ovniBody1">
+                        </div>
+                    </div>
+                    <div class="light1">
+                        <div class="reflexLight">
+                        </div>
+                    </div>
+                    <div class="light2">
+                        <div class="reflexLight">
+                        </div>
+                    </div>
+                    <div class="light3">
+                        <div class="reflexLight">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gif-container">
+                <a href="#footer"> <img src="img/scroll.gif" alt="" class="gif-img"></a>
+            </div>
+            <div class="scroll-to-top">
+                <a href="#" class="back-to-top"><img src="img/arrow-up (2).gif" alt=""></a>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="pages-2">
+            <section class="hidden" id="section-1">
+                <br> <br>
+                <h1 class="text-white">Học tập</h1>
+                <br> <br> <br> <br>
+                <p class="text-white">Sau 2 năm học tập tại trường Đại Học Nguyễn Tất Thành ngành công nghệ thông tin,
+                    tôi muốn chia sẻ với
+                    mọi người về trải nghiệm của mình. <br> <br> Đầu tiên, trường có một môi trường học tập chuyên
+                    nghiệp với các
+                    giảng viên có trình độ cao và giàu kinh nghiệm. <br> <br>Họ luôn sẵn sàng giúp đỡ và hỗ trợ sinh
+                    viên trong
+                    quá trình học tập.
+                    Tổng kết lại, sau 2 năm học tập tại trường Đại Học Nguyễn Tất Thành ngành công nghệ thông tin, tôi
+                    rất hài lòng với quyết định của mình. <br> <br> Trường cung cấp một môi trường học tập tốt và các
+                    hoạt động
+                    ngoại khóa thú vị, giúp sinh viên trau dồi kiến thức và kỹ năng thực tế.
+                    <br> <br> Tôi tin rằng, trường sẽ
+                    tiếp tục phát triển và mang lại nhiều cơ hội cho các bạn sinh viên trong tương lai.
+                </p>
+                <a href="https://ntt.edu.vn/gioi-thieu-chung/"><img src="./img/school-removebg-preview.png" alt=""></a>
+            </section>
+
+            <br> <br>
+            <section class=" hidden">
+                <h1 class="text-white" id="section-2">Đam mê</h1>
+                <br> <br>
+                <p class="text-white">Đam mê với công nghệ là điều luôn đồng hành với tôi trong suốt
+                    quá trình lớn
+                    lên. Tôi luôn tò mò về các sản phẩm công nghệ mới và sẵn sàng dành nhiều thời gian để tìm hiểu
+                    về chúng. <br> <br>Công nghệ không chỉ là một công cụ hỗ trợ cho cuộc sống, mà còn là một nguồn
+                    cảm hứng
+                    để tôi khám phá những điều mới mẻ và thú vị. <br> <br>
+
+                    Tôi tin rằng, đam mê với công nghệ sẽ giúp tôi tiếp tục trau dồi kiến thức và kỹ năng của mình,
+                    đồng thời mang lại những thành công và cảm hứng mới trong cuộc sống.</p>
+                <br>
+                <a href="https://vnexpress.net/khoa-hoc"><img class="" src="img/passion-removebg-preview.png"
+                        width="176px" height="176px" alt=""></a>
+            </section>
+
+            <section class="hidden" id="section-3">
+                <h1 class="text-white">Sở thích</h1>
+                <br>
+                <br>
+                <p class="text-white">
+                    1. Tôi rất thích nghe nhạc. Những giai điệu và lời bài hát luôn đem lại cho tôi cảm giác thư giãn và
+                    giải trí sau những giờ làm việc, giờ học căng thẳng.
+                    <br> <br>
+                    2. Chơi piano là sở thích của tôi. Mặc dù tôi chỉ mới chơi piano nhưng tôi rất thích cảm giác được
+                    đánh đàn.
+                    Điều đó giúp tôi thư giãn và tập trung tốt hơn vào <br>công việc.
+                </p>
+                <a href="https://www.youtube.com/watch?v=7maJOI3QMu0"><img src="img/piano-removebg-preview.png"
+                        width="176px" height="176px" alt=""></a>
+            </section>
+
+            <section class="hidden" id=section-4>
+                <h1 class="text-white">Bản thân</h1>
+                <p class="text-white">
+                    Tôi tên là Nguyễn Trọng Hiếu <br> <br>
+                    Sinh nhật : 14-03-2003 ( Ngày sinh với Albert Einstein ) <br> <br>
+                    Đang là sinh viên năm 2 tại Viện NIIE của trường Đại Học Nguyễn Tất Thành <br> <br>
+                    Ngành nghề đang học : Kỹ sư phần mềm <br> <br>
+                    Mong muốn trở thành lập trình viên trong tương lai.</p>
+                <a href="https://www.facebook.com/johnculit5/"><img src="img/self-removebg-preview.png" alt="" width="400px" height="200px"></a>
+            </section>
+
+            <section class="hidden" id="section-5">
+                <h1 class="text-white"> Tạm biệt ! <br> Cảm ơn bạn đã ghé qua trang web.</h1>
+            </section>
+        </div>
+
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="76o65S7l"></script>
+
+        <div id="footer">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=100095154425517"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/johnculit5/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:nguyentronghieu14032003@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="(+84)388136268"><i class="fa-solid fa-phone"></i></a>
+                <a
+                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu"><i
+                        class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095154425517">Fanpage</a></li>
+                    <li><a href="https://www.facebook.com/johnculit5/">Facebook</a></li>
+                    <li><a href="mailto:nguyentronghieu14032003@gmail.com"> Email</a></li>
+                    <li><a href="(+84)388136268">Điện thoại</a></li>
+                    <li><a
+                            href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu">Bản đồ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright &copy;2023 Designed by <span class="designer">HIEU</span></p>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-tabs=""
+                data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/profile.php?id=100095154425517"
+                    class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/profile.php?id=100095154425517">Lobby Stu</a></blockquote>
+            </div>
+            <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-width=""
+                data-layout="" data-action="" data-size="" data-share="true"></div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

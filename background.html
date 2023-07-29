@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Nguyễn Trọng Hiếu</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="plugin/fontawesome/css/all.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="space.css">
+    <link rel="stylesheet" href="background.css">
+    <script defer src="search.js"></script>
+    <script defer src="app.js"></script>
+    <script defer src="chatgpt.js"></script>
+    <script defer src="background.js"></script>
+</head>
+
+<body>
+
+
+   
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined"><i class="fa-solid fa-message"></i></span>
+        <span class="material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chatbot</h2>
+            <span class="close-btn material-symbols-outlined"><i class="fa-solid fa-xmark"></i></span>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined"><i class="fa-solid fa-user-graduate"></i></span>
+                <p>Xin chào <br> Tôi có thể giúp gì cho bạn?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message ..." required></textarea>
+            <span id="send-btn" class="material-symbols-outlined"><i
+                    class="fa-solid fa-circle-chevron-right"></i></span>
+        </div>
+    </div>
+
+
+
+    <div id="wrapper">
+        <div id="header">
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <div id="logo"><a href="index.html" class="logo"><img src="img/white-logo.png"></a></div>
+                        </li>
+                        <li><a href="index.html">
+                                <p class="text-white">Trang chủ</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-1">
+                                <p class="text-white">Học tập</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-2">
+                                <p class="text-white">Đam mê</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-3">
+                                <p class="text-white">Sở thích</p>
+                            </a></li>
+                        <li><a href="http://127.0.0.1:5500/index.html#section-4">
+                                <p class="text-white">Bản thân</p>
+                            </a></li>
+                        <li><a href="rp-cm.html">
+                                <p class="text-white">Bình luận</p>
+                            </a></li>
+                        <li><a href="background.html">
+                                <p class="text-white">Bộ sưu tập ảnh</p>
+                            </a></li>
+                        <li><a href="">
+                                <p class="text-white">Liên hệ <i class="fa-solid fa-caret-down"></i></p>
+                            </a>
+                            <div class="sub-menu-1">
+                                <ul>
+                                    <li>
+                                        <a href="https://www.facebook.com/johnculit5/">Facebook</a>
+                                    </li>
+                                    <li><a href="https://zalo.me/0388136268">Zalo</a></li>
+                                    <li><a href="(+84)388136268">Telephone</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="https://www.facebook.com/profile.php?id=100095154425517">
+                                <p class="text-white">Fanpage</p>
+                            </a></li>
+                    </ul>
+                </div>
+
+                <!-- <div class="search-bar">
+                    <form action="https://www.google.com.vn/?hl=vi" method="get" class="search">
+                        <input type="search" placeholder="Search" class="input" id="search">
+                        <i class="clear fa fa-times"></i>
+                        <button type="submit" class="input color"><img src="img/search.png" alt=""></button>
+                    </form>
+                </div> -->
+            </nav>
+            <div class="container-search">
+                <div class="icon">
+                    <i class="search fa fa-search"></i>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Tìm kiếm" id="search">
+                    <i class="clear fa fa-times"></i>
+                </div>
+            </div>
+            <div class="clear-both"></div>
+            <div class="sub-menu">
+                <a href="sign-in-up.html">
+                    <p class="text-white">Đăng nhập</p>
+                </a>
+                <a href="sign-in-up.html">
+                    <p id="sign-up" class="text-white">Đăng ký</p>
+                </a>
+            </div>
+            <div class="sub-header">
+                <a href="rp-cm.html"><img src="img/question (2).png" title="Trợ giúp"></a>
+            </div>
+        </div>
+
+        <div id="content">
+            <div class="greet">
+                <h1>Chào mừng đến với trang web của <span>Nguyễn Trọng Hiếu</span></h1>
+            </div>
+            <div class="greet-eng">
+                <a href="sign-up.html" title="Đăng ký ngay">
+                    <h2>Đăng ký làm thành viên của trang web.</h2>
+                </a>
+            </div>
+            <div class="short-content">
+                <p>Xin chào, trang web cá nhân của tôi là một không gian trực tuyến nơi tôi chia sẻ về sở thích và <br>
+                    kinh
+                    nghiệm trong cuộc sống của mình. Trang web này được tạo ra để chia sẻ những thông tin <br> cần thiết
+                    của tôi.
+                    Tôi hy vọng trang web của mình sẽ mang lại cho bạn những thông tin, <br> trải nghiệm và cảm hứng
+                    mới. Cảm ơn vì đã ghé thăm!</p>
+            </div>
+
+            <div class="gif-container">
+                <a href="#footer"> <img src="img/scroll.gif" alt="" class="gif-img"></a>
+            </div>
+            <div class="scroll-to-top">
+                <a href="#" class="back-to-top"><img src="img/arrow-up (2).gif" alt=""></a>
+            </div>
+        </div>
+        <div class="album">
+            <div box-album>
+                <h2 style="text-align:center" class="text-white">Bộ sưu tập ảnh phong cảnh</h2>
+
+                <div class="container-album">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 20</div>
+                        <img src="gallery/1.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 20</div>
+                        <img src="gallery/2.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 20</div>
+                        <img src="gallery/3.webp" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 20</div>
+                        <img src="gallery/4.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 20</div>
+                        <img src="gallery/5.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 20</div>
+                        <img src="gallery/6.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">7 / 20</div>
+                        <img src="gallery/7.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">8 / 20</div>
+                        <img src="gallery/8.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">9 / 20</div>
+                        <img src="gallery/9.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">10 / 20</div>
+                        <img src="gallery/10.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">11 / 20</div>
+                        <img src="gallery/11.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">12 / 20</div>
+                        <img src="gallery/12.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">13 / 20</div>
+                        <img src="gallery/13.png" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">14 / 20</div>
+                        <img src="gallery/14.png" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">15 / 20</div>
+                        <img src="gallery/15.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">16 / 20</div>
+                        <img src="gallery/16.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">17 / 20</div>
+                        <img src="gallery/17.png" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">18 / 20</div>
+                        <img src="gallery/18.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">19 / 20</div>
+                        <img src="gallery/19.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">20 / 20</div>
+                        <img src="gallery/20.jpg" width="1200px" height="700px">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/1.jpg" width="120px" height="75px"
+                                onclick="currentSlide(1)" alt="Ngắm hoàng hôn">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/2.jpg" width="120px" height="75px"
+                                onclick="currentSlide(2)" alt="Hồ vào biểu chiều">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/3.webp" width="120px" height="75px"
+                                onclick="currentSlide(3)" alt="Trời chiều">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/4.jpg" width="120px" height="75px"
+                                onclick="currentSlide(4)" alt="Hồ ở núi tuyết">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/5.jpg" width="120px" height="75px"
+                                onclick="currentSlide(5)" alt="Ban đêm bên bờ hồ">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/6.jpg" width="120px" height="75px"
+                                onclick="currentSlide(6)" alt="Hồ trong rừng buổi đêm">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/7.jpg" width="120px" height="75px"
+                                onclick="currentSlide(7)" alt="Ảnh đẹp">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/8.jpg" width="120px" height="75px"
+                                onclick="currentSlide(8)" alt="Ảnh One pice">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/9.jpg" width="120px" height="75px"
+                                onclick="currentSlide(9)" alt="Ngắm hoàng hôn">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/10.jpg" width="120px" height="75px"
+                                onclick="currentSlide(10)" alt="Trăng vào ban đêm">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/11.jpg" width="120px" height="75px"
+                                onclick="currentSlide(11)" alt="Ngắm hoàng hôn trên nóc nhà">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/12.jpg" width="120px" height="75px"
+                                onclick="currentSlide(12)" alt="Ngắm hoàng hôn dưới đường">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/13.png" width="120px" height="75px"
+                                onclick="currentSlide(13)" alt="Buổi tối đẹp">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/14.png" width="120px" height="75px"
+                                onclick="currentSlide(14)" alt="Hoàng hôn trên cánh đồng">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/15.jpg" width="120px" height="75px"
+                                onclick="currentSlide(15)" alt="Chiều tà">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/16.jpg" width="120px" height="75px"
+                                onclick="currentSlide(16)" alt="Ngắm trăng">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/17.png" width="120px" height="75px"
+                                onclick="currentSlide(17)" alt="Ngắm mưa">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/18.jpg" width="120px" height="75px"
+                                onclick="currentSlide(18)" alt="Mèo ngắm thành phố vào ban đêm">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/19.jpg" width="120px" height="75px"
+                                onclick="currentSlide(19)" alt="Sao băng rơi">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="gallery/20.jpg" width="120px" height="75px"
+                                onclick="currentSlide(20)" alt="Thành phố vào ban đêm">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous"
+            src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0" nonce="76o65S7l"></script>
+
+        <div id="footer">
+            <div class="social-icon">
+                <a href="https://www.facebook.com/profile.php?id=100095154425517"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.facebook.com/johnculit5/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="mailto:nguyentronghieu14032003@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+                <a href="(+84)388136268"><i class="fa-solid fa-phone"></i></a>
+                <a
+                    href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu"><i
+                        class="fa-solid fa-map-location-dot"></i></a>
+            </div>
+
+            <div class="footerNav">
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=100095154425517">Fanpage</a></li>
+                    <li><a href="https://www.facebook.com/johnculit5/">Facebook</a></li>
+                    <li><a href="mailto:nguyentronghieu14032003@gmail.com"> Email</a></li>
+                    <li><a href="(+84)388136268">Điện thoại</a></li>
+                    <li><a
+                            href="https://www.google.com/maps/place/Tr%C6%B0%E1%BB%9Dng+%C4%90%E1%BA%A1i+h%E1%BB%8Dc+Nguy%E1%BB%85n+T%E1%BA%A5t+Th%C3%A0nh+-+C%C6%A1+s%E1%BB%9F+Nguy%E1%BB%85n+H%E1%BB%AFu+Th%E1%BB%8D/@10.7431481,106.6989605,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f9fa1b72f8b:0x26780c08db949052!8m2!3d10.7431428!4d106.7015354!16s%2Fg%2F11c1p1pqxn?entry=ttu">Bản
+                            đồ</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footerbottom">
+                <p>Copyright &copy;2023 Designed by <span class="designer">HIEU</span></p>
+            </div>
+            <div class="fb-page" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-tabs=""
+                data-width="" data-height="" data-small-header="false" data-adapt-container-width="true"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/profile.php?id=100095154425517"
+                    class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/profile.php?id=100095154425517">Lobby Stu</a></blockquote>
+            </div>
+            <div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100095154425517" data-width=""
+                data-layout="" data-action="" data-size="" data-share="true"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
