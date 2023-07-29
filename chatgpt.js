@@ -81,7 +81,7 @@ const handleChat = () => {
     // Chương trình đang chạy
     setTimeout(() => {
         // Chương trình loading bằng câu "Thinking ... " khi đang đợi câu trả lời
-        const incomingchatLi = createChatli("Thinking...", "incoming")
+        const incomingchatLi = createChatli("Đang suy nghĩ...", "incoming")
         chatbox.appendChild(incomingchatLi);
         chatbox.scrollTo(0, chatbox.scrollHeight);
         generateResponse(incomingchatLi);
